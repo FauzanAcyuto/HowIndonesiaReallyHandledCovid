@@ -34,8 +34,8 @@ where total_deaths is not null
 group by continent, location, population, population_density 
 order by infectionrate
 --INSIGHTS: 
----Indonesia is ranked 62 out of 209 globally in infection rates (ranked from lowest to highest) with only 2.2% of the population infected
----indonesia is ranked 93 out of 209 globally in mortality rate (ranked from lowest to highest)
+---Indonesia is ranked 62 out of 209 globally in lowest infection rates (ranked from lowest to highest) with only 2.2% of the population infected
+---indonesia is ranked 93 out of 209 globally in lowest mortality rate (ranked from lowest to highest)
 ---This means that although Indonesia's case fatality rate (risk of dying when infected) is relatively high. 
 ---That number is affected by Indonesia's low infection count relative to population size.
 ---Indonesia is also ranked 18 in most total cases, while being ranked 4th in population size and ranked 63 in population density
@@ -78,7 +78,7 @@ order by casefatalityrate desc
 --for the column stay_at_home_requirement
 -- 0 = No measures
 -- 1 = Recommended not to leave the house
--- 2 = Required to not leave the house with exceptions for daily exercise, grocery shopping, and ‘essential’ trips
+-- 2 = Required to not leave the house with exceptions for daily exercise, grocery shopping, and â€˜essentialâ€™ trips
 with ppi_date as (
 select 
 	split_part(date, '-', 1) as year,
