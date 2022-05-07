@@ -1,4 +1,5 @@
 ---- COVID data exploration "How indonesia really handled the pandemic"
+---You can find the data set at https://github.com/owid/covid-19-data/tree/master/public/data
 
 --Query to answer 5 specific questions
 --1. What is the mortality rate and infection rate of covid in indonesia? 
